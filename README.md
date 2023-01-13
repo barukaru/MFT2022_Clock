@@ -1,20 +1,19 @@
 # MFT2022_Clock
-MFT2022で出展した時計の3Dデータ類の保存場所
+Maker Fair Tokyo2022で出展販売したローリングクロックのデータ保存場所  
 
-※制御基板：ラズベリーパイピコ　となっております。
-別途、以下の部品の購入を御願いします。
-・ラズベリーパイピコ
-・ステッピングモータ”28BYJ-48”
-・10kΩ　×　2本
-・タクトスイッチ　×　2個
-・ジャンパ、ワイヤー
-・USB 2.0 Micro-Bのプラグが付いたUSBケーブル
-・USB接続できるACアダプタ
+～フォルダ/ファイル説明～  
+/3D_Laser_cutter																：外装（レーザーカッター加工データ）  
+/3D_printer(FDM)																：本体（3Dプリンタ出力データ）  
+20221019_step_motor_SW_use_(intrpt-timer).py		：プログラム（Python）  
+README.md																				：本ファイル  
+assembling instructions.pdf											：外装と本体の組立手順  
+step_motor_cirkit_ブレッドボード.pdf							：ブレットボード配線図  
+step_motor_cirkit_回路図.pdf											：回路図  
+ローリングクロックプログラム説明書(timer割込み.pdf	：プログラム説明書  
 
-ファイル保存場所について
-・3D_Laser_cutter
-レーザーカッターで加工するファイルの保存場所
-
-・3D_printer(FDM)
-3Dプリンタで出力するファイルの保存場所
-
+【参考】  
+本プログラムは以下の構成で実施しています  
+制御基板：RaspberryPi pico（MicroPython）
+モーター：ステッピングモータ”28BYJ-48”  
+ドライバ：ULN2003  
+※モーターとドライバのセット品をAliExpressで購入  
